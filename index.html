@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script src="https://fb.me/react-15.3.0.js"></script>
+        <script src="https://fb.me/react-dom-15.3.0.js"></script>
+        
+        <style>
+            
+            .game-container{
+                display: table;
+            }
+            .grid{
+                display: table-cell;
+            }
+            .score{
+               display: table-cell;
+            }
+            .cell{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                border: 1px solid #aaa;
+                background: #f8f8f8;
+                margin-left: 4px;
+                margin-top:4px; 
+            }
+            .hint{
+                font-size: 40px;
+            }
+            .active{
+                background-color: #058BDA;
+            }
+            .guess-true{
+                background-color: #00CC00;
+            }
+            .guess-false{
+                background-color: #CC0000;
+            }
+            
+        </style>
+    </head>
+    <body >
+        <h3 align="center">Memory Game. Identify all the blue coloured squares to win</h3>
+        <div id="react" align="center" >Loading...</div>
+        <script>
+            System.import('lib/main.js')
+        </script>
+    </body>
+</html>
